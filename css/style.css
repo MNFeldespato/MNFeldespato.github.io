@@ -11,6 +11,12 @@
 *	Edit this section
 *
 * ======================================================= */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 300;
@@ -319,7 +325,7 @@ figure {
 
 .fh5co-feature {
   text-align: left;
-  width: 100%;
+  width: 61%;
   float: left;
 }
 .fh5co-feature .fh5co-icon {
@@ -330,11 +336,11 @@ figure {
 }
 .fh5co-feature .fh5co-icon i {
   color: #17e7a4;
-  font-size: 40px;
+  font-size: 50px;
 }
 .fh5co-feature .fh5co-text {
   float: right;
-  width: 82%;
+  width: 76%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-feature .fh5co-text {

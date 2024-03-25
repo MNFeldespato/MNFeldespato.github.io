@@ -1,19 +1,21 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>MN_HECTOR_CV</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="keywords"
+		content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  <!-- 
+	<!-- 
 	//////////////////////////////////////////////////////
 
 	FREE HTML5 TEMPLATE 
@@ -27,12 +29,12 @@
 	//////////////////////////////////////////////////////
 	 -->
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -42,7 +44,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -58,35 +60,118 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		.texto-profile{
+			text-align: justify;
+		}
+		.texto-skills{
+			text-align: center;
+		}
 
-	</head>
-	<body style="background-image: url(images/bg_img.jpg);">
-	
+		.imagenes {
+			max-width: 150px;
+		}
+
+		.profile-img {
+			width: 150px;
+			border-radius: 15px;
+		}
+
+		.dev {
+			font-size: 15px;
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		.contenido-oculto {
+			float: right;
+			width: 200px;
+			text-align: center;
+			margin-top: 40px;
+			display: block;
+			border-left: solid 3px transparent;
+			height: 90px;
+			padding-left: 5px;
+		}
+		.contenido-oculto:hover{
+			border-left: solid 3px #16FF00;
+		}
+		.fh5co-feature-2{
+				width: 100% !important;
+		}	
+		@media (max-width: 580px) {
+			.fh5co-feature {
+				width: 55%;
+			}
+			.fh5co-feature .fh5co-text {
+				width: 70%;
+				margin-top: 6px;
+			}
+		}
+		@media (max-width: 510px) {
+			.flex-container{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.fh5co-feature-3{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				width: 100%;
+			}
+			.fh5co-icon{
+				width: 25% !important;
+			}
+			.fh5co-text{
+				width: 100% !important;
+			}
+			.contenido-oculto{
+				margin-top: 0px;
+				margin-bottom: 90px;
+				width: 90%;
+				height: auto;
+				font-size: 16px;
+			}
+		}
+
+	</style>
+</head>
+
+<body style="background-image: url(images/bg_img.jpg);">
+
 	<div id="fh5co-main">
 		<div class="fh5co-tab-wrap">
 			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Perfil</span></a></li>
-				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Educación</span></a></li>
-				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experiencia</span></a></li>
-				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Habilidades</span></a></li>
+				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span
+							class="menu-text">Perfil</span></a></li>
+				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span
+							class="menu-text">Educación</span></a></li>
+				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span
+							class="menu-text">Experiencia</span></a></li>
+				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span
+							class="menu-text">Habilidades</span></a></li>
 			</ul>
 			<div class="fh5co-tab-content active" data-content="1">
 				<div class="fh5co-content-inner text-center">
 					<div class="row row-bottom-padded-sm">
 						<div class="col-md-12">
 							<figure>
-								<img src="images/profile_img.png" alt="Free HTML5 Wesbite Template by FreeHTML5.co">
+								<img src="images/profile_img 2.png" alt="Free HTML5 Wesbite Template by FreeHTML5.co"
+									class="profile-img">
 							</figure>
-							<h1>Murguia Hector</h1>
-							<p>Me gusta pasar mi tiempo en internet y me divierto descubriendo paginas webs geniales. Me gusta tanto que decidí convertirme en <a href="#">desarrollador</a> y crear mis propias paginas web</p>
+							<h1>HECTOR GUSTAVO<span class="dev">(dev)</span></h1>
+							<p class="texto-profile">Me gusta pasar mi tiempo en internet y me divierto descubriendo páginas webs geniales. Me
+								gusta tanto que decidí convertirme en <a href="#">desarrollador</a> y crear mis propias
+								páginas web</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 fh5co-counter">
-							<div class="fh5co-number fh5co-left">3</div>
+							<div class="fh5co-number fh5co-left">9</div>
 							<div class="fh5co-text">
 								<h3 class="border-bottom">Años de experiencia en Desarrollo Web</h3>
-								<p>Front-end & Back-end nivel Junior</p>
+								<p>Front-end & Back-end senior</p>
 							</div>
 						</div>
 					</div>
@@ -95,7 +180,7 @@
 						<li><a href="#"><i class="icon-twitter"></i></a></li>
 						<li><a href="#"><i class="icon-instagram"></i></a></li>
 						<li><a href="#"><i class="icon-google"></i></a></li>
-						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>					
 					</ul>
 				</div>
 			</div>
@@ -105,17 +190,17 @@
 						<div class="col-md-12">
 							<p></p>
 
-							<div class="fh5co-feature">
+							<div class="fh5co-feature fh5co-feature-2">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2016-2017</h2>
+									<h2>2015-2016</h2>
 									<p>Web Development | HTML | CSS | JavaScript | jQuery | NodeJS</p>
 								</div>
 							</div>
 
-							<div class="fh5co-feature">
+							<div class="fh5co-feature fh5co-feature-2">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
@@ -125,7 +210,7 @@
 								</div>
 							</div>
 
-							<div class="fh5co-feature">
+							<div class="fh5co-feature fh5co-feature-2">
 								<div class="fh5co-icon">
 									<i class="icon-graduation-cap"></i>
 								</div>
@@ -136,52 +221,62 @@
 							</div>
 
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
 			<div class="fh5co-tab-content" data-content="3">
 				<div class="fh5co-content-inner">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 flex-container">
 
-							<p>I have the privilege to work with these cool companies.</p>
+							<p></p>
 
-							<div class="fh5co-feature">
+							<div class="fh5co-feature fh5co-feature-3">
 								<div class="fh5co-icon">
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>2008 - Present</h2>
-									<h3>XYZ Inc.</h3>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
+									<h2>2023 - Presente</h2>
+									<h3>Mobius Digital</h3>
+									<p><img src="images/mobius_img.jpg" alt="" class="imagenes">
+									</p>
 								</div>
 							</div>
-
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2004-2008</h2>
-									<h3>Previous Ltd Co.</h3>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
-								</div>
+							<div class="contenido-oculto">
+								<p>Diseño y maquetación de landing page</p>
 							</div>
 
-							<div class="fh5co-feature">
+							<div class="fh5co-feature fh5co-feature-3">
 								<div class="fh5co-icon">
 									<i class="icon-black-tie"></i>
 								</div>
 								<div class="fh5co-text">
-									<h2>1999-2004</h2>
-									<h3>Previous Ltd Co.</h3>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
+									<h2>2017-2019</h2>
+									<h3>Rockstar Games</h3>
+									<p><img src="images/rockstar_img.jpg" alt="" class="imagenes" onclick="showHide2()"></p>
 								</div>
+							</div>
+							<div class="contenido-oculto">
+								<p>Mantenimiento de servidores</p>
+							</div>
+
+							<div class="fh5co-feature fh5co-feature-3">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2016-2017</h2>
+									<h3>Valve Corporation</h3>
+									<p><img src="images/valve_img.jpeg" alt="" class="imagenes" onclick="showHide3()"></p>
+								</div>
+							</div>
+							<div class="contenido-oculto">
+								<p>Optimización de codigo</p>
 							</div>
 
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
@@ -189,13 +284,13 @@
 				<div class="fh5co-content-inner">
 					<div class="row">
 						<div class="col-md-12">
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="texto-skills">Un nivel aproximado de mis conocimientos :) </p>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+							<div class="chart" data-percent="95"><span><strong>CSS3</strong>93%</span></div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
 							<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
@@ -220,13 +315,14 @@
 				<div class="col-md-6 col-md-offset-3 text-center">
 					<small>
 						&copy; 2016 Personal Free HTML5 Template. All Rights Reserved. <span class="fh5co-author">
-						Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></span>
+							Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a
+								href="http://unsplash.com/" target="_blank">Unsplash</a></span>
 					</small>
 				</div>
 			</div>
 		</footer>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -240,6 +336,6 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
+</body>
 
+</html>
